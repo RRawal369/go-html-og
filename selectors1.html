@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <!-- class selector is not unique and id is selector is unique -->
+
+    <style>
+        .Physics{
+            color:olivedrab;
+        }
+        .Chemistry{
+            color:blue;
+            font-size:20px;
+        }
+        .Math{
+            color:Red;
+            font-size:25px;
+        }
+
+        #main{
+            color:green
+        }
+
+        #special{
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class  = "Physics"> Student1-Physics</h1>   
+    <h1 class  = "Physics" id = "main"> Student2-Physics</h1>   
+    <h1 class  = "Chemistry"> Student1-Chemistry</h1>   
+    <h1 class  = "Math"> St<span id = "special">u</span>dent1-Math</h1>   
+    <h1 class  = "Chemistry"> Student2-Chemistry</h1>   
+    
+</body>
+</html>

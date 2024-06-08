@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    
+    <style>
+
+        .card {
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            /* padding-top: 10px; top sides will be 10 padding*/
+
+            /* padding: 10px; all sides will be 10 padding */
+
+            /* padding: 10px 15px 20px 25px; order will be top-right-bottom-left */
+            /* fhg top-right-bottom and right padding will be replicated to left*/
+            padding: 10px 15px 20px;
+
+            /* same rules are appliedfor margin */
+
+            margin:10px;
+
+            border: 2px solid red;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="card">
+            Crad 1
+        </div>
+        
+        <div class="card">
+            Crad 2
+        </div>
+        
+        <div class="card">
+            Crad 3
+        </div>
+        
+
+
+    </div> 
+    
+</body>
+</html>

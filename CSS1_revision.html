@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS1 Revision</title>
+    <style>
+
+        h1{
+            font-size:10px;
+        }
+        p{
+            color:red;
+        }
+        .highlighted{
+            color:blue
+        }
+        #special{
+            color:green;
+        }
+        input[type = "number"]{
+            background : black;
+        }
+
+        /* pseudo selectors, they are based on actions */
+
+        a:hover{
+            color : orange;
+        }
+        .card{
+            width:300px;
+            height:300px;
+            background-color:aquamarine;
+            background-repeat:repeat;
+            background-position:left;
+            background-size:10%;
+            background-image : url("https://img2.cgtrader.com/items/1988719/68b620bb3a/google-logo-3d-model-low-poly-max-obj-mtl-3ds-fbx-c4d-ma-mb.jpg")
+        }
+    </style>
+</head>
+<body>
+
+    <h1>This is a heading of font 10px</h1>
+    <p>All para for red color</p>
+    <p class = "highlighted">This is a highlighted para</p>
+    <p class = "highlighted">Another highlighted para</p>
+    <p id = "special">This is a special para of color green</p>
+    <input type = "number"/>
+    <input type = "text"/>
+    <a href = "#">Link</a>
+    <div class = "card"></div>
+    
+</body>
+</html>

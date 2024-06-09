@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+
+    <!-- There are 2 types of unit: absolute (px) and relative (% and vw/vh) -->
+
+    <!-- if we mention the dimension as % then it will refer to the most immediate fixed 
+    dimesion parent/container. If it doesn't find that it will refrer teh screen dimensions. -->
+
+    <style>
+
+        /* In this case the width of the card will be half of the parent/ container */
+
+        /* .container{
+            border: 1px solid red;
+            height: 100px;
+            width: 100px;
+
+        }
+        .card{
+            border: 1px solid black;
+            height: 100px;
+            width: 50%;
+        } */
+
+        /* here the width of the card will be half of the screen         */
+
+        /* .card{
+            border: 1px solid black;
+            height: 100px;
+            width: 50%;
+        } */
+
+        /* Here the width of the card will be half of the screen */
+
+        /* .container{
+            border: 1px solid red;
+            height: 100px;
+            width: 200px;
+
+        }
+        .card{
+            border: 1px solid black;
+            height: 100px;
+            width: 50vw;
+        } */
+
+        /* Here the width of the acrd will be 70% of the 
+        container which in turn will be half of the width of the screen */
+
+        .container{
+            border: 1px solid red;
+            height: 100px;
+            width: 50%;
+
+        }
+        .card{
+            border: 1px solid black;
+            height: 100px;
+            width: 70%;
+        }
+
+        /* To define a relative font size we can use rem. We can fix a font size in html root and then we 
+        can use rem to give a relative font size to any html element */
+
+        html{
+            font-size: 10px;
+        }
+        .card{
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            I am a card
+        </div>
+    </div>
+    
+</body>
+</html>

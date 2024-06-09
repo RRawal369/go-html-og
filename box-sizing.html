@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+
+    <style> 
+        .card1{
+            /* by default is content box and width and height includes only the content */
+
+            background-color: green;
+            height:200px;
+            width: 100px;
+            padding: 10px;
+            border: 3px black solid;
+
+        }
+        .card2{
+
+            /* In border box width and height includes content padding and border */
+            /* margin is not included in either content or border box */
+
+            background-color: green;
+            height:200px;
+            width: 100px;
+            padding: 10px;
+            border: 3px black solid;
+            box-sizing: border-box;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>   
+        <div class="card1">
+
+            Content box
+
+        </div>
+
+        <div class="card2">
+            border box
+
+        </div>
+    </div>
+    
+</body>
+</html>

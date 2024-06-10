@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex model</title>
+
+    <!-- In flex layout the parent governs the display layout of the children -->
+
+    <style>
+
+        .container{
+            background-color: antiquewhite;
+            height :500px;
+            width: auto;
+            display: flex;
+            /* direction default is row and we can change it to column */
+            flex-direction: row;
+            /* justify and align are to order the elements along main and
+            cross axis respectively */
+            /* justify-content: space-between; */
+            /* other options are space-evenly and around */
+            /* justify-content: flex-end; */
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; */
+            justify-content: flex-start;
+            /* flex-wrap is to make the site responsive pf the screen size */
+            /* flex-wrap: wrap; */
+            gap: 50px;
+        
+
+
+        }
+
+        /* order is used to sort teh items in a particular order
+        by default the order of all the items is 0; */
+
+        /* ordr is only a flex property, 
+        means it will work on items whose parent has flex display */
+
+        #special1{
+            order : 1;
+            flex-shrink: 2;
+            /* shrink defines how fast the particular flex 
+            child will shrink wrt the other children */
+        }
+        #special2{
+            order : 2;
+        }
+
+        .container > div{
+            background-color: orange;
+            width: 120px;
+            height : 80px;
+            margin: 1px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            Div 1
+        </div>
+        <div id = "special1">
+            Div 2
+        </div>
+        <div id = "special2">
+            Div 3
+        </div>
+        <div>
+            Div 4
+        </div>
+        <div>
+            Div 5
+        </div>
+        <div>
+            Div 6
+        </div>
+        
+
+    </div>
+
+
+   
+
+
+    
+</body>
+</html>

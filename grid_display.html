@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+
+        /* reset style */
+
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            font-size:20px;
+            color:aqua;
+            background: gray;
+        }
+
+        .container{
+
+            width: 1200px;
+            margin: 100px auto;
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px ; */
+            /* grid-template-columns: 1fr 2fr 1fr ;
+            grid-template-rows: 1fr 2fr 1fr ; */
+
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+            /* grid-template: 100px 200px 100px /1fr 1fr 1fr ; */
+            /* grid-template-columns: repeat(4, 1fr) ; */
+            border: 2px black solid;
+            column-gap: 10px;
+            row-gap: 10px;
+            /* gap: 10px; */
+            grid-auto-rows: 200px;
+
+            /* not sure waht the align-content and align-items is  */
+
+            /* align-items: center; */
+
+            /* align-content: end; */
+
+        }
+
+        .items{ 
+            background-color:  blue;
+            /* height: 100px; */
+            /* width:100px; */
+            color: white;
+            padding: 10px;
+            border: 1px black solid;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="items">Div1</div>
+        <div class="items">Div2</div>
+        <div class="items">Div3</div>
+        <div class="items">Div4</div>
+        <div class="items">Div5</div>
+        <div class="items">Div6</div>
+        <div class="items">Div7</div>
+        <div class="items">Div8</div>
+        <div class="items">Div9</div>
+        <div class="items">Div10</div>
+        <div class="items">Div11</div>
+        <div class="items">Div12</div>
+        <div class="items">Div13</div>
+    </div>
+    
+</body>
+</html>

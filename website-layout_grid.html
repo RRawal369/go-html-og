@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid website</title>
+<style>
+
+    /* The best practice is to use grid for 2d layouts and flex for 1D */
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-size: 20px;
+        height:100vh;
+        display: grid;
+
+        /* arrange grid children based on their names */
+
+        grid-template-areas: 
+                'oopar oopar oopar oopar'
+                'nav beech bagal bagal2'
+                'nav neeche neeche neeche';
+        grid-template-columns: 1fr 4fr 1fr 1fr;
+        grid-template-rows: 80px 1fr 70px;
+    }
+
+    header{
+        grid-area: oopar;
+    }
+    nav{
+        grid-area: nav;
+    }
+    main{
+        grid-area: beech;
+    }
+    footer{
+        grid-area: neeche;
+    }
+    aside{
+        grid-area: bagal;
+    }
+    div{
+        grid-area: bagal2;
+    }
+
+    header, nav, aside, main, footer, div{
+        background-color: tomato;
+        color: white;
+        padding:20px;
+        border: 1px skyblue solid;
+    }
+</style>
+</head>
+<body>
+
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <aside>Sidebar</aside>
+    <main>Content</main>
+    <div>Sidebar2</div>
+    <footer>Footer</footer>
+    
+</body>
+</html>

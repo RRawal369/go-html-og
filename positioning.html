@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning</title>
+
+    <style>
+
+        /* relative position shifts the element w.r.t its own center/ position  */
+        /* .pos{
+            position : relative;
+            left:30px;
+            top : 100px;
+        } */
+
+        /* static does nothing and it is the default */
+        /* .pos{
+            position : static;
+            left:30px;
+            top : 100px;
+        } */
+
+        /* asbotlute takes the element out of the layer and positions it w.r.t 
+        the closest ancestor which has a non-static position defined */
+
+        /* .pos{
+            position : absolute;
+            
+        } */
+
+        /* ----------------------------- */
+
+        body{
+            height: 1000px;
+        }
+
+        .container{
+            /* position: static; */
+            position: relative;
+            border: 2px solid black;
+            font-size: 20px;
+        }
+
+        .pos{
+            position : absolute;
+            top: 0px;
+            left:0px;
+            
+        }
+
+        /* stays fixed upon scrolling  */
+
+        /* nav{
+            background-color: aqua;
+            width: 100%;
+             position: fixed;
+            left: 10px;
+            top: 10px;
+        } */
+
+        /* in sticky it becomes fixed when the top becomes less than 
+        10px (same for left scrolling) */
+
+        /* Both sticky and fixed positions are related to the viewport */
+
+        nav{
+            background-color: aqua;
+            width: 100%;
+            position: sticky;
+            left: 5px;
+            top: 5px;
+        } 
+
+
+    </style>
+</head>
+<body>
+    <div>I am the outer div</div>
+    
+    <nav>I am a nav bar</nav>
+    <div class = "container">
+        <div class = "pos">This is div1</div>
+        <div>This is div2</div>
+        <div>This is div3</div>
+    </div>
+    
+    
+</body>
+</html>

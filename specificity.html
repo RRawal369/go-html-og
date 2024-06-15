@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity of an element</title>
+
+    <style>
+
+        /* .fruit{
+            color:red;
+        } */
+        /* #special{
+            color:green;
+        } */
+
+        /* important keyword overrides everything */
+        /* .fruit{
+            color:red !important;
+        } */
+
+        /* calculate the specificivity in the below cases and decide the precedence */
+
+        ul li{
+            color:green;
+        }
+        ul li#special{
+            color: red !important;
+        }
+        ul li.fruit{
+            color: blue !important;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Mango</li>
+        <li id = "special" class = "fruit" >Orange</li>
+        <!-- <li id = "special" class = "fruit" style = "color:blue !important">Orange</li> -->
+        <li>Apple</li>
+    </ul>
+    
+</body>
+</html>

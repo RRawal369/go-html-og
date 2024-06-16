@@ -6,19 +6,42 @@
     <title>Descendent selector</title>
 
         <!-- descendent selector  -->
-    <style>
+    <!-- <style>
         div li{
         color:blue
         }
-    </style>
+    </style> -->
 
     <!-- child selector -->
+    <!-- <style>
+        div>p>ol>li {
+
+            color : green;
+        }
+    </style> -->
+
+    <!-- Multi-selector -->
+
+    <!-- <style>
+        .m1{
+            color:red;
+        }
+    </style>
+      <style>
+        .m2.m3{
+            color:green;
+        }
+    </style> -->
+
+    <!-- attribute selector -->
+
+
     
 
 </head>
 <body>
 
-    <ol>
+    <!-- <ol>
         <li>step1</li>
         <li>step2</li>
     </ol>
@@ -37,7 +60,31 @@
                 <li>step22</li>
             </ol>
         </p>
-    </div>
+    </div> -->
+
+    <!-- <p class = "m1">This is class m1</p>
+    <p class = "m2 m1">This is class m2m1</p>
+    <p class = "m1 m3 m2">This is combined class</p> -->
+
+    <!-- attribute selector -->
+
+    <style>
+        input[value = "Select me"]{
+            color : white;
+            background: blue;
+            font-size: 20px;
+            border: rgb(1, 40, 8);
+            padding: 10px 20px
+        }
+    </style>
+
+    <form>
+
+        <input type  = "button" value = "Click me">
+        <input type  = "button" value = "Select me">
+    </form>
+
+
     
 </body>
 </html>

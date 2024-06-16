@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <!-- There are three types of elements in html, inline and block 
+    Block: They take the enitre page width and don't allow any other element inline with them
+            We can assign a height and width to these. e.g. div
+    Inline: They take the width of the content and allow other element to be inline with them
+            We can't assign height and width to these elements. e.g. span
+    Blok-inline : They allow otehr elements to be inline to them but we can assign
+                    height and width to them.
+
+    we can chnage the default display behaviour by using the display argument in HTML. -->
+
+        <style>
+
+            div{
+                background-color: orange;
+                height: 100px;
+                width: 100px;
+            }
+            span{
+
+                background-color: orange;
+                height: 100px;
+                width: 100px;
+                display: block;
+
+            }
+
+            img{
+                height: 40px;
+                width: 50px;
+
+
+            }
+        </style>
+</head>
+<body>
+
+    
+
+        <div>
+
+            I am div block
+
+        </div>
+
+        <span>
+            I am span1 inline
+
+        </span>
+        <span>
+            I am span2 inline
+
+        </span>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.J_qfenzmeJx082eb5WeGyAHaHc&pid=Api&P=0&h=180" alt="Block inline image" >
+   
+    
+</body>
+</html>

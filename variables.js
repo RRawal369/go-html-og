@@ -42,11 +42,11 @@
 //------------------ const keyword blocks redeclaration and redefinition both--------------
 
 
-const  a = 10;
-console.log(a);
+// const  a = 10;
+// console.log(a);
 
-a = "hello";  
-console.log(a);
+// a = "hello";  
+// console.log(a);
 
 
 //                  redeclaration             redefinition
@@ -54,6 +54,17 @@ console.log(a);
 // var                 Y                           Y
 // let                 N                           Y
 // const               N                           N 
+
+// backticks allow us to use the string literals
+
+ const x = 999;
+ const result = `${x} number of people are watching`; // string literal
+console.log(result);
+
+console.log(`The value of 2+3 is ${2+3}`);
+
+// when we don't initialize a variables with a value at the time of declaration it is undefined
+
 
 
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+
+    <style>
+
+        /* specificity = ids + classes + elements */
+
+        /* specificity = (0,0,2) */
+        ul li{
+            color: red;
+        }
+
+        /* specificity = (0,1,2) */
+        ul li.fruit{
+            color: green;
+        }
+
+        /* specificity = (1,0,2) */
+        ul li#fav{
+            color: blue;
+        }
+
+        /* important keyword overrides everything */
+
+        #fav{
+            color: black !important;
+        }
+
+        /* pseudo classes like hover, active are treated 
+        as classes when calculating specificity */
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Banana</li>
+        <li id = "fav" class = "fruit">Orange</li>
+        <li>Apple</li>
+    </ul>  
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLex</title>
+
+    <!-- Flex is a layout model, meaning it is a way of displaing children based on a parent -->
+
+    <style>
+
+            html{
+                 font-size: 16px;
+                
+            }
+            .container{
+
+                background-color: aquamarine;
+                height: 500px;
+                width: auto;
+                border: 2px solid black;
+                display: flex;
+                flex-direction: row;
+                /* EM takes the font size from the parent and REm take sit from the root */
+                font-size: 2rem;
+                /* justify content is for main axis alignment */
+                /* justify-content: flex-start;
+                justify-content: center;
+                justify-content: flex-end;
+                justify-content: space-between;
+                justify-content: space-around;
+                justify-content: space-evenly; */
+                /* align items is for cross axis alignment */
+                /* align-items: flex-end;
+                align-items: flex-start;
+                align-items: center; */
+                gap: 10px; /*keeps a fixed gap between all the elements*/
+                /* flex-wrap: wrap; The box sizes don't change in wrap */
+
+        }
+
+    .container > div{
+
+        background-color: orange;
+        height: 100px;
+        width: 150px;
+        margin : 10px;
+        border: 1px black solid;
+
+    }
+
+    /*Order property is only applicable to those items which are under a flex container*/
+    /* By default the order of each flex item is 0 */
+    #special1{
+        order: 1;
+        flex-grow: 2;
+    }
+    #special2{
+        order: 2;
+        flex-shrink: 2;
+    }
+
+    @media only screen and (max-width: 600px){
+        .container{
+
+            flex-direction: column;
+        }
+
+        html{
+            font-size: 10px;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div>Div 1</div>
+        <div id = "special1">Div 2</div>
+        <div id = "special2">Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+    </div>
+    
+</body>
+</html>

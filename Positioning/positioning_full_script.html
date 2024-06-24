@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <!-- There are three types os positioning:
+    Static: this is default and represents teh normal CSS flow
+    Relative: This is used to position teh element relative to its static position
+    absolute: This is used to position the element relative to the 
+    first non-statically positioned parent/ ancestor
+    in absolute position teh element is taken out of the layer 
+    
+    Fixed: in this the position of the ele is fixed and doesn't chnage upon scrolling
+    
+    Sticky : becomes fixed after the specified dimensions are reached
+    
+    ** fixed and sticky are related to viewport-->
+
+    <style>
+
+        /* .Positioning{
+            border: 1px black solid;
+            padding: 10px;
+            position: relative;
+            top : 30px;
+            left: 40px;
+        } */
+
+        /* nav{
+            background-color: aquamarine;
+            position: fixed;
+            top: 70px;
+            left: 50%;
+        } */
+        nav{
+            background-color: aquamarine;
+            position: sticky;
+            top: 30px;
+            left: 50%;
+        }
+
+        body{
+
+            height: 2000px;
+        }
+        .Positioning{
+            border: 1px black solid;
+            padding: 10px;
+            position: absolute;
+            top : 0px;
+            left: 0px;
+        }
+        .container{
+            position: relative;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>This is the first div</div>
+    <div class = "container">
+        <div class = "Positioning">This is the second div</div>
+        <div>This is the third div</div>
+        <div>This is the third div</div>
+    </div>
+    <nav>This is a nav bar</nav>
+    
+    
+</body>
+</html>

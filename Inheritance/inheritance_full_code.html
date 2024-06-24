@@ -28,6 +28,27 @@
             background-color: inherit;
         }
 
+        /* below inherits everything inheritable from parent or ancestors */
+
+        .card{
+
+            all:inherit;
+        }
+
+        /* Initial sets the property to the user agent style 
+        sheet if it is defined under user agent style sheet 
+        e.g background color will have no effect of initial 
+        as it is not defined under user agent style sheet*/
+
+        /* unset: inherit from parent/ ancestor if inheritable other-wise take the initial */
+
+        #special{
+            /* background-color: initial;
+            color: initial; */
+            color: unset;
+
+        }
+
         /* Some properties are by default inherited */
 
         /* some properties are non-inheritable and can't be inherited

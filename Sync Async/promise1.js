@@ -30,3 +30,6 @@ promise1.then((res) =>
         })
 
 // Even if we provide synchronous task inside the promise it will execute, but there si no point, as there won't be any pending state
+
+
+
